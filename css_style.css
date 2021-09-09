@@ -1,0 +1,55 @@
+/*Different layout functions for the user interface*/
+
+
+body {color: black;
+    background: #f4f4f4;
+font-family: 'Times New Roman', Times, serif
+;line-height: 1.3em;
+width: 50%;
+margin:auto;
+}
+.container {text-align:center;}
+.box-1 {margin: 60px;
+   
+
+}
+h1 {
+    
+    letter-spacing: 0.07em;
+}
+a{ text-decoration: none;
+color:rgb(0, 0, 0);
+}
+a:hover {color:red}
+a:active {color: blue;}
+
+.my-form label {display:block;
+padding-bottom: 8px;
+}
+
+.my-form input[type ="submit"] {
+    background-color: rgb(253, 253, 253);
+    color:black;
+    font-family: monospace;
+    padding: 4px 5px;
+
+    
+}
+.my-form input[type ="submit"] :hover {
+    color: rgb(57, 45, 226);
+    
+}
+
+styledimg p{
+    background-image: url(../website/logo_small.png);
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 20px;
+    }
+
+.img-logo {
+    width: 400px;
+    height: 100px;
+
+
+}

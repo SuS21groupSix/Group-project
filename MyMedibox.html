@@ -1,0 +1,81 @@
+<!--The user interface-->
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyMedibox</title>
+		<link rel = "stylesheet" type = "text/css" 
+		href ="static/css/css_style.css">
+	
+	</head>
+	<body>
+		<div class ="container">
+			<div class = "box-1">
+				<dif class = "header1">
+					<h2>WELCOME TO</h2>
+					<h2>myMEDIBOX!</h2>
+				</dif>
+				<br>
+				<p>In your personal MyMedibox you can add items to your virtual medicine cabinet, check your inventory,
+				reorder products and much more.<br><strong>Just have a look!</strong></p><br>
+			</div>
+			<div class = "box-1">
+				<dif class ="my-form">
+					<h2>Check inventory</h2>
+					<p>Have a look at your medicine cabinet and get an overview over your items and their information.</p>
+					<form action="/check-inventory" method="GET">
+					<input type="submit" value="Check inventory"></form><br><br>
+				</dif>
+			</div>		
+			<div class = "box-1">
+				<dif class ="my-form">
+					<h2>Search inventory</h2>
+					<p>Check whether an item exists in your medicine cabinet.</p>
+					<form action="/search-inventory" method="GET">
+					<label><em>What item would you like to search for?</em><br></label>
+					<input type="text" name="search_item">
+					<input type="submit" value="Search inventory"></form><br><br>
+				</dif>
+				</form><br>
+			</div>
+			<div class = "box-1">
+				<dif class ="my-form">
+					<h2>Add items to inventory</h2>
+					<p>Add items to your medicine cabinet by simply scanning the QR- or barcode of your product.</p>
+					<form action="/add-items" method="GET">
+					<input type="submit" value="Scan item"></form><br><br>
+				</dif>
+			</div>
+			<div class = "box-1">
+				<dif class ="my-form">
+					<h2>Remove items from inventory</h2>
+					<p>Remove items from your medicine cabinet when you have disposed of them.</p>
+					<form action="/remove-items" method="GET">
+					<label><em>What item would you like to remove?</em><br></label>
+					<input type="text" name="remove_item">
+					<input type="submit" value="Remove item"></form><br><br>
+				</dif>
+			</div>
+			<div class = "box-1">
+				<dif class ="my-form">
+					<h2>Check expiry dates</h2> 
+					<p>Check the expiry dates of your products to see when you will have to replace them.</p>
+					<form action="/check-dates" method="GET">
+					<input type="submit" value="Check expiry dates"></form><br><br>
+				</dif>	
+			</div>
+			<div class = "box-1">
+				<dif class ="my-form">
+					<h2>Reorder items</h2>
+					<p>Reorder your items when you need to.</p>
+					<form action="/reorder-items" method="GET">
+					<label><em>What item would you like to reorder?</em><br></label>
+					<input type="text" name="reorder_item">
+					<input type="submit" value="Buy item"></form><br><br>
+				</dif>
+			</div>
+	</div>
+	</body>
+	<div style ="margin-top:300px;"></div>
+</html>
